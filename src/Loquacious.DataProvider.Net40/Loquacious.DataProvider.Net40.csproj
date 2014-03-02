@@ -7,8 +7,8 @@
     <ProjectGuid>{BD3FB05A-483A-4C05-8583-F36707A40FFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Loquacious.DataProvider.Net40</RootNamespace>
-    <AssemblyName>Loquacious.DataProvider.Net40</AssemblyName>
+    <RootNamespace>Loquacious.DataProvider</RootNamespace>
+    <AssemblyName>Loquacious.DataProvider</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
