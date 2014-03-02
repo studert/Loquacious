@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loquacious.DataProvider", "src\Loquacious.DataProvider\Loquacious.DataProvider.csproj", "{DF6D8A5D-423A-43D3-BA07-B203D6F50506}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loquacious.DataProvider.Net40", "src\Loquacious.DataProvider.Net40\Loquacious.DataProvider.Net40.csproj", "{BD3FB05A-483A-4C05-8583-F36707A40FFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3FB05A-483A-4C05-8583-F36707A40FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3FB05A-483A-4C05-8583-F36707A40FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3FB05A-483A-4C05-8583-F36707A40FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3FB05A-483A-4C05-8583-F36707A40FFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
