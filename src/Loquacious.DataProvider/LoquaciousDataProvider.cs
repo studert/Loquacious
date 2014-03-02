@@ -10,15 +10,31 @@
     using Sitecore.Data.SqlServer;
     using Sitecore.Diagnostics;
 
+    /// <summary>
+    /// A very loquacious data provider.
+    /// </summary>
     public class LoquaciousDataProvider : SqlDataProvider
     {
+        /// <summary>
+        /// The filters.
+        /// </summary>
         private readonly List<string> filters = new List<string>();
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="LoquaciousDataProvider"/> class.
+        /// </summary>
+        /// <param name="connectionString">The connection string.</param>
         public LoquaciousDataProvider(string connectionString)
             : base(new SqlServerDataApi(connectionString))
         {
         }
 
+        /// <summary>
+        /// Gets the filters.
+        /// </summary>
+        /// <value>
+        /// The filters.
+        /// </value>
         public List<string> Filters
         {
             get
@@ -27,6 +43,23 @@
             }
         }
 
+        /// <summary>
+        /// Activates this instance.
+        /// </summary>
+        public static void Activate()
+        {
+            // this call is kinda stupid, but otherwise the dll would not get copyied to
+            // the output path.
+            Log.Debug("LoquaciousDataProvider activated", typeof(LoquaciousDataProvider));
+        }
+
+        /// <summary>
+        /// Basically call the standard data provider.
+        /// Queries the fast.
+        /// </summary>
+        /// <param name="query">The query.</param>
+        /// <param name="context">The context.</param>
+        /// <returns>A list of IDs.</returns>
         protected override IDList QueryFast(string query, CallContext context)
         {
             var baseIdList = this.SelectIDs(query, context);
@@ -58,11 +91,22 @@
             return null;
         }
 
+        /// <summary>
+        /// Determines whether the trace is enabled for the specified query.
+        /// </summary>
+        /// <param name="query">The query.</param>
+        /// <returns>True, if enabled.</returns>
         private bool IsTraceEnabled(string query)
         {
             return this.filters.Count == 0 || this.Filters.Any(query.Contains);
         }
 
+        /// <summary>
+        /// Formats the SQL query by replacing the parameters with the actual values.
+        /// </summary>
+        /// <param name="sql">The SQL.</param>
+        /// <param name="parameterList">The parameter list.</param>
+        /// <returns>The formatted query.</returns>
         private string FormatSqlQuery(string sql, ParametersList parameterList)
         {
             var parameters = parameterList.ToArray();
