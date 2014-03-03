@@ -98,7 +98,7 @@
         /// <returns>True, if enabled.</returns>
         private bool IsTraceEnabled(string query)
         {
-            return this.filters.Count == 0 || this.Filters.Any(query.Contains);
+            return this.Filters.Count == 0 || this.Filters.Any(query.Contains);
         }
 
         /// <summary>
