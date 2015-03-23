@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseInsensitiveDataProvider", "src\CaseInsensitiveDataProvider\CaseInsensitiveDataProvider.csproj", "{028AC504-D5F8-4336-BB91-A635B943634B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoquaciousDataProvider", "src\LoquaciousDataProvider\LoquaciousDataProvider.csproj", "{DF6D8A5D-423A-43D3-BA07-B203D6F50506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseInsensitiveDataProvider.Sitecore7", "src\CaseInsensitiveDataProvider.Sitecore7\CaseInsensitiveDataProvider.Sitecore7.csproj", "{145653F0-F29C-476A-B0B0-09013A158585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseInsensitiveDataProvider.Sitecore6", "src\CaseInsensitiveDataProvider.Sitecore6\CaseInsensitiveDataProvider.Sitecore6.csproj", "{A13A9FA1-B658-4970-B421-17DFF6256F84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoquaciousDataProvider.Sitecore6", "src\LoquaciousDataProvider.Sitecore6\LoquaciousDataProvider.Sitecore6.csproj", "{87109DFA-2291-4E34-9CAE-6AE0B22849AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoquaciousDataProvider.Sitecore7", "src\LoquaciousDataProvider.Sitecore7\LoquaciousDataProvider.Sitecore7.csproj", "{E2752376-FAC4-4FB9-9DDA-CC88E91A79FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{028AC504-D5F8-4336-BB91-A635B943634B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028AC504-D5F8-4336-BB91-A635B943634B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028AC504-D5F8-4336-BB91-A635B943634B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028AC504-D5F8-4336-BB91-A635B943634B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF6D8A5D-423A-43D3-BA07-B203D6F50506}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145653F0-F29C-476A-B0B0-09013A158585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145653F0-F29C-476A-B0B0-09013A158585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145653F0-F29C-476A-B0B0-09013A158585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145653F0-F29C-476A-B0B0-09013A158585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13A9FA1-B658-4970-B421-17DFF6256F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13A9FA1-B658-4970-B421-17DFF6256F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13A9FA1-B658-4970-B421-17DFF6256F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13A9FA1-B658-4970-B421-17DFF6256F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87109DFA-2291-4E34-9CAE-6AE0B22849AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87109DFA-2291-4E34-9CAE-6AE0B22849AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87109DFA-2291-4E34-9CAE-6AE0B22849AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87109DFA-2291-4E34-9CAE-6AE0B22849AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2752376-FAC4-4FB9-9DDA-CC88E91A79FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2752376-FAC4-4FB9-9DDA-CC88E91A79FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2752376-FAC4-4FB9-9DDA-CC88E91A79FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2752376-FAC4-4FB9-9DDA-CC88E91A79FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

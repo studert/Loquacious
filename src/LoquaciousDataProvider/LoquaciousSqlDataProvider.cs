@@ -1,4 +1,4 @@
-﻿namespace Loquacious.DataProvider
+﻿namespace DataProviderCollection.LoquaciousDataProvider
 {
     using System.Collections.Generic;
     using System.Diagnostics;
@@ -13,7 +13,7 @@
     /// <summary>
     /// A very loquacious data provider.
     /// </summary>
-    public class LoquaciousDataProvider : SqlDataProvider
+    public class LoquaciousSqlDataProvider : SqlDataProvider
     {
         /// <summary>
         /// The filters.
@@ -21,10 +21,10 @@
         private readonly List<string> filters = new List<string>();
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="LoquaciousDataProvider"/> class.
+        /// Initializes a new instance of the <see cref="LoquaciousSqlDataProvider"/> class.
         /// </summary>
         /// <param name="connectionString">The connection string.</param>
-        public LoquaciousDataProvider(string connectionString)
+        public LoquaciousSqlDataProvider(string connectionString)
             : base(new SqlServerDataApi(connectionString))
         {
         }
@@ -41,16 +41,6 @@
             {
                 return this.filters;
             }
-        }
-
-        /// <summary>
-        /// Activates this instance.
-        /// </summary>
-        public static void Activate()
-        {
-            // this call is kinda stupid, but otherwise the dll would not get copyied to
-            // the output path.
-            Log.Debug("LoquaciousDataProvider activated", typeof(LoquaciousDataProvider));
         }
 
         /// <summary>
